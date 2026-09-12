@@ -23,5 +23,10 @@ namespace ConsoleApp1
             this.Month = month;
             this.Year = year;
         }
+
+        public override string ToString()
+        {
+            return $"{Day}/{Month}/{Year}";
+        }
     }
 }

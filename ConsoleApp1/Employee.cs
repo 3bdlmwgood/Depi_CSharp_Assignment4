@@ -31,5 +31,13 @@ namespace ConsoleApp1
             this.HireDate = HireDate;
             this.Gender = Gender;
         }
+
+        public override string ToString()
+        {
+            return $"ID: {ID} - Name: {Name} - Security Level:{SecurityLevel} " +
+                $"\nSalary:{String.Format("{0:C}", Salary)} - HireDate: {HireDate} - Gender: {Gender}";
+        }
+
+
     }
 }
