@@ -19,6 +19,7 @@ namespace ConsoleApp1
             this.Name = "Unknown";
             this.SecurityLevel = enSecurityLevel.Guest;
             this.Salary = 0;
+            this.HireDate = new HireDate();
             this.Gender = enGender.Male;
         }
 
@@ -34,10 +35,9 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return $"ID: {ID} - Name: {Name} - Security Level:{SecurityLevel} " +
-                $"\nSalary:{String.Format("{0:C}", Salary)} - HireDate: {HireDate} - Gender: {Gender}";
+            return $"ID: {ID} - Name: {Name} - Gender: {Gender}" +
+                $"\nSalary: {String.Format("{0:C}", Salary)} - Security Level: {SecurityLevel} - HireDate: {HireDate}";
         }
-
 
     }
 }
