@@ -8,7 +8,7 @@ namespace ConsoleApp1
     {
         public int ID {  get; set; }
         public string Name { get; set; }
-        public string SequrityLevel {  get; set; }
+        public enSecurityLevel SecurityLevel {  get; set; }
         public decimal Salary { get; set; }
         public HireDate HireDate { get; set; }
         public enGender Gender { get; set; }
@@ -17,16 +17,16 @@ namespace ConsoleApp1
         {
             this.ID = 0;
             this.Name = "Unknown";
-            this.SequrityLevel = "Unknown";
+            this.SecurityLevel = enSecurityLevel.Guest;
             this.Salary = 0;
             this.Gender = enGender.Male;
         }
 
-        public Employee(int Id,string Name,string SequrityLevel,decimal Salary,HireDate HireDate,enGender Gender)
+        public Employee(int Id,string Name, enSecurityLevel SecurityLevel,decimal Salary,HireDate HireDate,enGender Gender)
         {
             this.ID = Id;
             this.Name = Name;
-            this.SequrityLevel = SequrityLevel;
+            this.SecurityLevel = SecurityLevel;
             this.Salary = Salary;
             this.HireDate = HireDate;
             this.Gender = Gender;

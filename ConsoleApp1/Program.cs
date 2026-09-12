@@ -2,6 +2,8 @@
 {
     public enum enGender { Male , Female}
 
+    public enum enSecurityLevel { Guest,Developer,Secrtary,DBA }
+
     internal class Program
     {
         
