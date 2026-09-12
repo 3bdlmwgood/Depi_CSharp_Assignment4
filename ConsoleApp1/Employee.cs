@@ -10,10 +10,19 @@ namespace ConsoleApp1
         public string Name { get; set; }
         public string SequrityLevel {  get; set; }
         public decimal Salary { get; set; }
-        public DateOnly HireDate { get; set; }
-        public bool Gender { get; set; }
+        public HireDate HireDate { get; set; }
+        public char Gender { get; set; }
 
-        public Employee(int Id,string Name,string SequrityLevel,decimal Salary,DateOnly HireDate,bool Gender)
+        public Employee()
+        {
+            this.ID = 0;
+            this.Name = "Unknown";
+            this.SequrityLevel = "Unknown";
+            this.Salary = 0;
+            this.Gender = 'M';
+        }
+
+        public Employee(int Id,string Name,string SequrityLevel,decimal Salary,HireDate HireDate,char Gender)
         {
             this.ID = Id;
             this.Name = Name;
